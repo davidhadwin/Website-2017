@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="218px" height="250px" viewBox="0 0 218 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>CSS 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CSS">
+            <g id="CSS-3">
+                <g id="Hexagon-Large" fill="#FFFFFF">
+                    <polygon id="Polygon" points="109.066987 0 217.320163 62.5 217.320163 187.5 109.066987 250 0.813811825 187.5 0.813811825 62.5"></polygon>
+                </g>
+                <g id="CSS" transform="translate(48.000000, 44.000000)">
+                    <path d="M75,14 L75,0 L98,0 L98,7 L82,7 L82,9 L98,9 L98,16.1661859 L98,23 L75,23 L75,17 L91,17 L91,14 L75,14 Z M50,14 L50,0 L73,0 L73,7 L56,7 L56,9 L73,9 L73,16.1661859 L73,23 L50,23 L50,17 L66,17 L66,14 L50,14 Z M48,7 L48,0 L25,0 L25,23 L48,23 L48,17 L32,17 L32,7 L48,7 Z" id="Combined-Shape" fill="#000000"></path>
+                    <g id="Shield" transform="translate(0.000000, 31.000000)">
+                        <polygon id="Combined-Shape" fill-opacity="0.8" fill="#006FBE" points="0 0 123 0 111.81101 118.745662 61.5 131.862684 11.4256327 118.745662"></polygon>
+                        <polygon id="Rectangle-11" fill="#FFFFFF" points="19 24 102 24 100.40802 39.7596862 67.3737498 53.2006727 98.961682 53.2006727 94.4497061 98.7435862 61.5 107.321812 26.7099798 98.7435862 24.8103497 76.1822617 41.1397044 76.1822617 41.1397044 88.228507 61.5 91.9511651 79.0672794 88.228507 81.0261612 67.6679096 23.5044494 67.6679096 22.0121193 53.2006727 60.9945155 37.1441802 20.3558536 37.1441802"></polygon>
+                        <polygon id="Rectangle-11" fill="#D8D8D8" points="19 24 61.5 24 61.5 107.321812 26.7099798 98.7435862 24.8103497 76.1822617 41.1397044 76.1822617 41.1397044 88.228507 61.5 91.9511651 61.5 67.6679096 23.5044494 67.6679096 22.0121193 53.2006727 60.9945155 37.1441802 20.3558536 37.1441802"></polygon>
+                    </g>
+                    <polygon id="highlight" fill-opacity="0.8" fill="#2AA9E0" style="mix-blend-mode: lighten;" points="61.5 41 112.336975 41.3294539 112.336975 152 70.9446277 140.95829"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

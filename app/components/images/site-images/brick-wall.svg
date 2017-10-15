@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="552px" height="1000px" viewBox="0 -272 552 456" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>brick-wall</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <style type="text/css">
+           
+
+
+            #r1b0 {
+                animation: appear 15s linear 0 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r1b1 {
+                animation: appear 15s linear .2s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r1b2 {
+                animation: appear 15s linear .4s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r1b3 {
+                animation: appear 15s linear .6s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r1b4 {
+                animation: appear 15s linear .8s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+
+            #r2b0 {
+                animation: appear 15s linear 1s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r2b1 {
+                animation: appear 15s linear 1.2s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r2b2 {
+                animation: appear 15s linear 1.4s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r2b3 {
+                animation: appear 15s linear 1.6s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+
+            #r3b0 {
+                animation: appear 15s linear 1.8s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r3b1 {
+                animation: appear 15s linear 2s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r3b2 {
+                animation: appear 15s linear 2.2s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r3b3 {
+                animation: appear 15s linear 2.4s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+
+            #r4b0 {
+                animation: appear 15s linear 2.6s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r4b1 {
+                animation: appear 15s linear 2.8s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r4b2 {
+                animation: appear 15s linear 3s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+
+            #r5b0 {
+                animation: appear 15s linear 3.2s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r5b1 {
+                animation: appear 15s linear 3.4s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r5b2 {
+                animation: appear 15s linear 3.6s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+
+            #r6b0 {
+                animation: appear 15s linear 3.8s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r6b1 {
+                animation: appear 15s linear 4s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+
+            #r7b0 {
+                animation: appear 15s linear 4.2s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+            #r7b1 {
+                animation: appear 15s linear 4.4s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+
+            #r8b0 {
+                animation: appear 15s linear 4.6s 1 forwards;
+                animation-iteration-count: infinite;
+                opacity: 0;
+            }
+
+            @keyframes appear {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-200px);
+                }
+                5%, 20% {
+                    opacity: .5;
+                    transform: translateY(0);
+                }
+                70% {
+                    opacity: 0;
+                }
+            }
+            @keyframes disappear {
+                0%, 90% {
+                    fill: #D9D5C2;
+                } 
+                100% {
+                    fill: transparent;
+                }
+            }
+        </style>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="brick-wall" fill="#D9D5C2">
+            <rect id="r1b0" x="0" y="408" width="45" height="48"></rect>
+            <rect id="r1b1" x="57" y="408" width="114" height="48"></rect>
+            <rect id="r1b2" x="184" y="408" width="114" height="48"></rect>
+            <rect id="r1b3" x="311" y="408" width="114" height="48"></rect>
+            <rect id="r3b0" x="0" y="291" width="45" height="48"></rect>
+            <rect id="r3b1" x="57" y="291" width="114" height="48"></rect>
+            <rect id="r3b2" x="184" y="291" width="114" height="48"></rect>
+            <rect id="r5b0" x="0" y="175" width="45" height="48"></rect>
+            <rect id="r5b1" x="57" y="175" width="114" height="48"></rect>
+            <rect id="r7b0" x="0" y="58" width="45" height="48"></rect>
+            <rect id="r7b1" x="57" y="58" width="114" height="48"></rect>
+            <rect id="r8b0" x="0" y="0" width="114" height="48"></rect>
+            <rect id="r5b2" x="184" y="175" width="114" height="48"></rect>
+            <rect id="r6b0" x="2" y="116" width="114" height="48"></rect>
+            <rect id="r6b1" x="129" y="116" width="114" height="48"></rect>
+            <rect id="r3b3" x="311" y="291" width="114" height="48"></rect>
+            <rect id="r4b0" x="2" y="233" width="114" height="48"></rect>
+            <rect id="r4b1" x="129" y="233" width="114" height="48"></rect>
+            <rect id="r4b2" x="256" y="233" width="114" height="48"></rect>
+            <rect id="r1b4" x="438" y="408" width="114" height="48"></rect>
+            <rect id="r2b0" x="0" y="349" width="114" height="48"></rect>
+            <rect id="r2b1" x="127" y="349" width="114" height="48"></rect>
+            <rect id="r2b2" x="254" y="349" width="114" height="48"></rect>
+            <rect id="r2b3" x="381" y="349" width="114" height="48"></rect>
+        </g>
+    </g>
+</svg>

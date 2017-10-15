@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 92 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <style type="text/css">
+            #logo {
+                fill: #D9D5C2;
+                -webkit-transform-origin: 50% 50%;
+                -moz-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                -o-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                animation: spin 10s ease 0 infinite forwards;
+            }
+
+            @keyframes spin {
+              0% {
+                transform: rotate(0deg);
+              }
+              7.5% {
+                transform: rotate(240deg);
+              }
+              15% {
+                transform: rotate(160deg);
+              }
+              22.5% {
+                transform: rotate(186.5deg);
+              }
+              30% {
+                transform: rotate(177deg);
+              }
+              37.5% {
+                transform: rotate(180.5deg);
+              }
+              45% {
+                transform: rotate(179.5deg);
+              }
+              50% {
+                transform: rotate(180deg);
+              }
+              57.5% {
+                transform: rotate(-60deg);
+              }
+              65% {
+                transform: rotate(20deg);
+              }
+              72.5% {
+                transform: rotate(-6.5deg);
+              }
+              80% {
+                transform: rotate(3deg);
+              }
+              87.5% {
+                transform: rotate(-.5deg);
+              }
+              95% {
+                transform: rotate(.5deg);
+              }
+              100% {
+                transform: rotate(0deg);
+              }
+            }
+        </style>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M48.1161131,41.7222446 L35.0861096,37.7954451 L45.2133686,7.10542736e-15 L22.9291519,7.10542736e-15 L0,39.7144561 L22.9804076,79.5176897 L45.4136516,79.5176897 L35.7735268,43.6856443 L33.7603444,51.1989433 L40.25615,75.4416195 L25.1253811,75.4416195 L4.41764943,39.5747761 L25.1253811,3.70793272 L40.1545091,3.70793272 L25.6579878,57.8096866 L28.4346544,62.6190141 L34.0339269,41.7222446 L48.1161131,41.7222446 Z M43.6664098,37.7954451 L56.623645,41.7222446 L46.496386,79.5176897 L69.0195924,79.5176897 L92,39.7144561 L69.0708481,8.71924642e-15 L46.5281602,0 L56.1063828,35.7464135 L58.139289,28.1595041 L51.5875102,3.70793272 L66.5408445,3.70793272 L87.2485762,39.5747761 L66.5408445,75.4416195 L51.6538877,75.4416195 L66.1243751,21.4370253 L63.3477086,16.6276977 L57.6758278,37.7954451 L43.6664098,37.7954451 Z M68.6434212,12.0358175 L65.8667546,7.22649 L64.5155216,12.2693601 L67.2921882,17.0786876 L68.6434212,12.0358175 Z M23.1548668,67.1514612 L25.9315334,71.9607887 L27.2668413,66.9773518 L24.4901748,62.1680242 L23.1548668,67.1514612 Z M26.0455403,7.23491396 L23.2688737,12.0442415 L29.5679811,35.5528305 L31.6006421,27.9668364 L26.0455403,7.23491396 Z M65.8744781,72.2014416 L68.6514797,67.3915338 L62.3321581,43.8075046 L60.2992519,51.394414 L65.8744781,72.2014416 Z" id="logo" fill="#32688B"></path>
+    </g>
+</svg>

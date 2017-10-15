@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <style>
+            #half, #one {
+                box-shadow: 0px 6px 10px 0px rgba(0,0,0, .14), 0px 1px 18px 0px rgba(0,0,0, .12), 0px 3px 5px 0px rgba(0,0,0, .20);
+            }
+        </style>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-2" sketch:type="MSArtboardGroup" fill="#F6DA23">
+            <polygon id="half" sketch:type="MSShapeGroup" points="49.6507128 79 21.4370207 93.8328157 26.8253564 62.4164079 4 40.1671843 35.5438667 35.5835921 49.6507128 7 "></polygon>
+            <polygon id="one" sketch:type="MSShapeGroup" transform="translate(71.825356, 50.416408) scale(-1, 1) translate(-71.825356, -50.416408) " points="94.6507128 79 66.4370207 93.8328157 71.8253564 62.4164079 49 40.1671843 80.5438667 35.5835921 94.6507128 7 "></polygon>
+        </g>
+    </g>
+</svg>

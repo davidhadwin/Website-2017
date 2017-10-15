@@ -1,0 +1,658 @@
+$small: 480;
+$medium: 650;
+$large: 900;
+$extraLarge: 1200;
+
+// Shadows
+$onedp: 0px 0px 2px 0px rgba(0,0,0, .14), 0px 2px 2px 0px rgba(0,0,0, .12), 0px 1px 3px 0px rgba(0,0,0, .20); // Switch
+$twodp: 0px 0px 4px 0px rgba(0,0,0, .14), 0px 3px 4px 0px rgba(0,0,0, .12), 0px 1px 5px 0px rgba(0,0,0, .20); // Card, Raised Button, Quick Entry/Search bar 
+$threedp: 0px 3px 3px 0px rgba(0,0,0, .14), 0px 3px 4px 0px rgba(0,0,0, .12), 0px 1px 8px 0px rgba(0,0,0, .20); // Refresh Indicator, Quick Entry/Search bar (scrolled state)
+$fourdp: 0px 2px 4px 0px rgba(0,0,0, .14), 0px 4px 5px 0px rgba(0,0,0, .12), 0px 1px 10px 0px rgba(0,0,0, .20); // App Bar
+$sixdp: 0px 6px 10px 0px rgba(0,0,0, .14), 0px 1px 18px 0px rgba(0,0,0, .12), 0px 3px 5px 0px rgba(0,0,0, .20); // Floating Action Button (FAB), Snackbar
+$eightdp: 0px 8px 10px 1px rgba(0,0,0, .14), 0px 3px 14px 3px rgba(0,0,0, .12), 0px 4px 15px 0px rgba(0,0,0, .20); // Bottom Navigation Bar, Menu, Card (when picked up), Raised Button (pressed state)
+$ninedp: 0px 9px 12px 1px rgba(0,0,0, .14), 0px 3px 16px 2px rgba(0,0,0, .12), 0px 5px 6px 0px rgba(0,0,0, .20); // Submenu +1 dp for each sub menu
+$twelvedp: 0px 12px 17px 2px rgba(0,0,0, .14), 0px 5px 22px 4px rgba(0,0,0, .12), 0px 7px 8px 0px rgba(0,0,0, .20); //Floating Action Button (FAB) pressed
+$sixteendp: 0px 16px 24px 2px rgba(0,0,0, .14), 0px 6px 30px 5px rgba(0,0,0, .12), 0px 8px 20px 0px rgba(0,0,0, .20); //Nav Drawer, Side Drawer, Modal Bottom Sheet
+$twenty-fourdp: 0px 24px 38px 3px rgba(0,0,0, .14), 0px 9px 46px 8px rgba(0,0,0, .12), 0px 11px 15px 0px rgba(0,0,0, .20); //Dialog, Picker
+
+$onedpsvg: drop-shadow(0px 0px 2px rgba(0,0,0, .14)) drop-shadow(0px 2px 2px rgba(0,0,0, .12)) drop-shadow(0px 1px 3px rgba(0,0,0, .20)); // Switch
+$twodpsvg: drop-shadow(0px 0px 4px rgba(0,0,0, .14)) drop-shadow(0px 3px 4px rgba(0,0,0, .12)) drop-shadow(0px 1px 5px rgba(0,0,0, .20)); // Card, Raised Button, Quick Entry/Search bar 
+$threedpsvg: drop-shadow(0px 3px 3px rgba(0,0,0, .14)) drop-shadow(0px 3px 4px rgba(0,0,0, .12)) drop-shadow(0px 1px 8px rgba(0,0,0, .20)); // Refresh Indicator, Quick Entry/Search bar (scrolled state)
+$fourdpsvg: drop-shadow(0px 2px 4px rgba(0,0,0, .14)) drop-shadow(0px 4px 5px rgba(0,0,0, .12)) drop-shadow(0px 1px 10px rgba(0,0,0, .20)); // App Bar
+$sixdpsvg: drop-shadow(0px 6px 10px rgba(0,0,0, .14)) drop-shadow(0px 1px 18px rgba(0,0,0, .12)) drop-shadow(0px 3px 5px rgba(0,0,0, .20)); // Floating Action Button (FAB), Snackbar
+$eightdpsvg: drop-shadow(0px 8px 10px rgba(0,0,0, .14)) drop-shadow(0px 3px 14px rgba(0,0,0, .12)) drop-shadow(0px 4px 15px rgba(0,0,0, .20)); // Bottom Navigation Bar, Menu, Card (when picked up), Raised Button (pressed state)
+$ninedpsvg: drop-shadow(0px 9px 12px rgba(0,0,0, .14)) drop-shadow(0px 3px 16px rgba(0,0,0, .12)) drop-shadow(0px 5px 6px rgba(0,0,0, .20)); // Submenu +1 dp for each sub menu
+$twelvedpsvg: drop-shadow(0px 12px 17px rgba(0,0,0, .14)) drop-shadow(0px 5px 22px rgba(0,0,0, .12)) drop-shadow(0px 7px 8px rgba(0,0,0, .20)); //Floating Action Button (FAB) pressed
+$sixteendpsvg: drop-shadow(0px 16px 24px rgba(0,0,0, .14)) drop-shadow(0px 6px 30px rgba(0,0,0, .12)) drop-shadow(0px 8px 20px rgba(0,0,0, .20)); //Nav Drawer, Side Drawer, Modal Bottom Sheet
+$twenty-fourdpsvg: drop-shadow(0px 24px 38px rgba(0,0,0, .14)) drop-shadow(0px 9px 46px rgba(0,0,0, .12)) drop-shadow(0px 11px 15px rgba(0,0,0, .20)); //Dialog, Picker
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  font:1em/1.5em "Comic Sans MS", cursive;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #1F5578;
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr,
+.button-container{
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: 10;
+    color: #EEE;
+
+    &:first-child {
+        margin-top: 1.5rem;
+    }
+}
+
+/* RESETS */
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* END RESETS */
+
+h1, h2, h3 {
+    font-weight: 200;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h1:first-letter {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+h2:first-letter {
+    font-size: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    border: 2px white solid;
+    color: white;
+    background-color: #7DA6C0;
+    padding: .5rem 1rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+hr {
+    width: 50%;
+    margin: 3rem auto;
+}
+
+section {
+    padding: 1.5rem;
+    padding-bottom: 0;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+    .hex-info-container {
+        display: none;
+        position: relative;
+    }
+
+    &.isSelected {
+        padding: 0;
+        text-align: left;
+
+        & > h1 {
+            display: none;
+        }
+
+        
+        .slider-container {
+            min-width: 100%;
+            height: 5rem;
+            background-color: #11405F;
+            overflow-x: scroll;
+
+            .hex-section {
+                min-width: 100vw;
+                padding-top: 5px;
+                white-space: nowrap;
+
+                .sub-section {
+                    display: inline-block;
+                }
+
+                h2 {
+                    display: none;
+                }
+                
+                .hex-container {
+                    width: auto;
+                    margin: 0;
+                    max-width: none;
+                    display: inline-block;               
+
+                    .hex {
+                        width: 4.3rem;
+                        margin: 0;
+                        position: relative;
+                        // box-shadow: $eightdp;
+
+                        &:not(.active) {
+                            opacity: .5;
+                        }
+
+                        &.active .SVGInline-svg {
+                            filter: $eightdpsvg;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .hex-info-container {
+            display: block;
+            text-align: center;
+            padding: 2rem 1.5rem 0px;
+        }
+    }
+}
+
+section#header {
+    padding: 2rem;
+    background-color: #fff;
+}
+section#intro {
+    background-color: #7DA6C0;
+    text-align: center;
+}
+section#languages {
+    background-color: #32688B;
+}
+section#skills {
+    background-color: #1F5578;
+}
+section#interests {
+    background-color: #4F7F9E;
+}
+section#countries {
+    background-color: #1F5578;
+}
+
+.rating {
+    & > span {
+        display: inline-block;
+
+        & > svg {
+            max-height: 1.5rem;
+            max-width: 1.5rem;
+        }
+    }
+}
+
+.SVGInline-svg {
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    width: 90%;
+    @media (min-width: #{$small}px) and (max-width: #{$medium}px) {
+        & {
+            width: 90%;
+        }
+    }
+    @media (min-width: #{$medium}px) {
+        & {
+            width: 70%;
+        }
+    }
+    @media (min-width: 900px) {
+        & {
+            width: 50%;
+        }
+    }
+}
+
+/* HEXES START HERE */
+
+.hex-container {
+    display: inline-block;
+    font-size: 0;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    vertical-align: top;
+}
+
+a.hex {
+    // margin: -4% 0;
+    display: inline-block;
+    width: 25%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+
+    & > span.SVGInline .SVGInline-svg {
+        transition: all 0.3s ease;
+        filter: $twodpsvg;
+    }
+     .hex-name {
+        color: white;
+    }
+}
+
+.hex-related-works {
+    text-align: left;
+}
+
+.related-work {
+    vertical-align: top;
+
+    &.small, &.medium, &.large {
+        display: inline-block;
+        padding-bottom: 0;
+    }
+
+    &.medium {
+        width: 100%;
+    }
+
+    &.small {
+        width: 50%;
+    }
+
+    &.small:nth-of-type(2n-1) {
+        .related-work-detail {
+            margin-right: calc(-100% - 1.5rem)
+        }
+    }
+
+    &.small:nth-of-type(2n) {
+        .related-work-detail {
+            margin-left: calc(-100% - 1.5rem)
+        }
+    }
+
+    & > a { 
+        padding: 1rem;
+        & > img {
+            box-shadow: $twodp;
+        }
+    }
+
+    .related-work-toggle {
+        display: inline-block;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        font-size: 0; // Needed for browser spacing bugs -DH
+        position: relative;
+        z-index: 1;
+        width: 100%;
+
+        & > img {
+            box-shadow: $twodp;
+        }
+
+        &.active {
+
+            & > img {        
+                box-shadow: $eightdp;
+            }
+            &:after {
+                content: " ";
+                display: block;
+                width: 2rem;
+                border-bottom: 1.5rem solid #1F5578;
+                border-left: 2rem solid transparent;
+                border-right: 2rem solid transparent;
+                bottom: 0;
+                left: calc(50% - 2rem);
+                position: absolute;
+                z-index: -1;
+            }
+        }
+        
+    }
+
+    .related-work-detail {
+        background-color: #1F5578;
+        padding: 1.5rem;
+        padding-bottom: 0;
+        position: relative;
+        transition: all 3s cubic-bezier(.25,.8,.25,1);
+        height: auto;
+        margin-right: -1.5rem;
+        margin-left: -1.5rem;
+        overflow: hidden;
+    }
+}
+
+.close-button-container {
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    svg {
+        opacity: .2;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+}
+
+.landmark {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+
+/* Mixin that centers hexes if there are less than the necessary number in a line */
+@mixin centerHexes ($number) {
+    $nextRowStart: $number + 1;
+    $nextRowEnd: $number + $number - 1;
+    $nextRowDif: $nextRowEnd - $nextRowStart;
+    $nextRowStartFormula: #{$nextRowEnd}n - #{$nextRowDif};
+    $defaultMargin: calc(50% / #{$number});
+    a.hex:nth-child(#{$nextRowStartFormula}) {
+        margin-left: $defaultMargin;
+    }
+    a.hex:nth-child(#{$nextRowEnd}n) {
+        margin-right: $defaultMargin;
+    }
+
+    @for $i from 1 to $number {
+        $threshold: $number - $i;
+        a.hex:nth-last-child(#{$i}):first-child {
+            margin-left: calc(#{$threshold} * #{$defaultMargin});
+        }
+    }
+}
+
+@mixin organizeHexes ($number) {
+    a.hex { 
+        width: calc(100% / #{$number});
+        padding: 0 5px;
+    }
+
+    @include centerHexes ($number);
+}
+
+/* Media queries to keep the hexes orderly */
+@media only screen and (max-width: #{$small}px) {
+    @include organizeHexes (4);
+
+    section#header {
+        padding: 1rem;
+    }
+    .landmark {
+        margin-bottom: 2rem;
+    }
+    a.hex {
+        .hex-description {
+            display: none;
+        }
+    }
+}
+@media only screen and (min-width: #{$small}px) and (max-width: #{$medium}px) {
+    /* Allows the borders to grow at some points */
+    .hex-container {
+        max-width: 500px;
+        // margin-top: 45px;
+
+        a.hex {
+            .hex-description {
+                display: none;
+            }
+        }
+    }
+    
+    @include organizeHexes (5);
+}
+@media only screen and (min-width: #{$medium}px) and (max-width: #{$large}px) {
+    /* Allows the borders to grow at some points */
+    .hex-container {
+        max-width: 1200px;
+        // margin-top: 65px;
+
+        a.hex {
+            // margin: -2% 0;
+            .hex-description {
+                display: none;
+            }
+        }
+    }
+    @include organizeHexes (8);
+}
+@media only screen and (min-width: #{$large}px) {
+    section#intro {
+        display: flex;
+
+        h1 {
+            width: 50%;
+            text-align: right;
+            line-height: 2.1rem
+        }
+        .button-container {
+            width: 50%;
+            text-align: left;
+
+            button {
+                margin: 0 0 0 5rem;
+            }
+        }
+    }
+
+    
+
+    a.hex {
+        .rating {
+            & > span {
+                display: inline-block;
+
+                & > svg {
+                    max-height: 1rem;
+                    max-width: 1rem;
+                }
+            }
+        }
+    }
+
+    section.isSelected {
+        display: flex;
+
+        .slider-container {
+            min-width: auto;
+            width: 30%;
+            max-width: 300px;
+            height: 100vh;
+            background-color: #11405F;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            display: inline-block;
+
+            .hex-section {
+                min-width: 100%;
+                padding: 1.5rem 0 0 .75rem;
+
+                .sub-section {
+                    width: 100%;
+                    display: block;
+                }
+
+                h2 {
+                    display: none;
+                }
+                
+                .hex-container {
+                    width: 100%;
+                    max-width: none;
+
+                    .hex {
+                        height: auto;
+                        width: 100%;
+                        position: relative;
+                        text-align: left;
+                        display: flex; 
+                        align-items: center;
+                        margin-bottom: .75rem;
+
+                        & > span.SVGInline {
+                            display: inline-block;
+                            width: 30%;
+                        }
+
+                        .hex-description {
+                            display: inline-block;
+                            max-width: 70%;
+                            font-size: 1em;
+                            padding: 1rem;
+                            vertical-align: top;
+
+                            .hex-name {
+                                font-size: 1.5em;
+                            }
+                        }
+
+                        &:not(.active) {
+                            opacity: .5;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hex-info-container {
+            width: 70%;
+            display: inline-block;
+            font-size: 1em;
+            max-height: 100vh;
+            overflow-x: scroll;
+            flex-grow: 2;
+        }
+    }
+
+    .hex-container {
+        max-width: 1200px;
+        .hex {
+            // margin: 10% 0;
+        }
+    }
+
+    .related-work {
+        &.large {
+            width: 100%;
+        }
+
+        &.medium {
+            width: 50%;
+        }
+
+        &.small {
+            width: 50%;
+        }
+    }
+
+    .related-work:nth-child(2n-1) {
+        .related-work-detail {
+            margin-right: calc(-100% - 1.5rem);
+        }
+    }
+    .related-work:nth-child(2n) {
+        .related-work-detail {
+            margin-left: calc(-100% - 1.5rem);
+        }
+    }
+
+    @include organizeHexes (8);
+}
+
+/* HEXES END HERE */
+
+
+
+/* Sense whether the user is using a mouse */
+@media (pointer: fine) {
+    /* Add hover effects */
+    a.hex:hover {
+        &  > .SVGInline > .SVGInline-svg {
+            transition: all 0.3s ease;
+            transform: scale(1.1);
+            filter: $eightdpsvg;
+        }
+    }
+    .related-work-toggle > img:hover,
+    button:hover {
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+        box-shadow: $eightdp;
+    }
+    button:hover {
+        transition: all 0.3s ease;
+        background-color: white;
+        color: #7DA6C0;
+    }
+    .close-button-container:hover {
+        svg {
+            opacity: .5;
+        }
+    }
+}
+
+/* Helpers */
+.hidden {
+    display: none;
+}

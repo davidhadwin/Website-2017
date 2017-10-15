@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="78px" viewBox="0 0 78 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>Close</title>
+    <defs>
+    	
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Close" sketch:type="MSArtboardGroup" transform="translate(-11.000000, -11.000000)" fill="#000000">
+            <path d="M55,45 L55,0 L45,0 L45,45 L0,45 L0,55 L45,55 L45,100 L55,100 L55,55 L100,55 L100,45 L55,45 L55,45 Z" id="close" sketch:type="MSShapeGroup" transform="translate(50.000000, 50.000000) rotate(-315.000000) translate(-50.000000, -50.000000) "></path>
+        </g>
+    </g>
+</svg>
