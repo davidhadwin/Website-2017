@@ -19,9 +19,16 @@ function defaultView(props) {
 function expandedView(url) {
 	return (
 		<div className="hex-info-container">
-			<ItemInfoContainer name={ name } rating={ rating } description={ <span>
-		      <p>When I was younger...</p>
-					</span> } />
+			<ItemInfoContainer name={ name } rating={ rating } description={ 
+			<ul>
+					<li>Raised speaking French till the age of 7</li>
+					<li>Forgot French while learning English because of never having learned to read and write</li>
+					<li>Took French classes from high school through college</li>
+					<li>Volunteered 2 weeks at Workaways in both Nantes and Normandy, France</li>
+					<li>Hitch-hiked around France for 2 months</li>
+					<li>Mastered the French course in Duolingo</li>
+					<li>Achieved working proficiency</li>
+				</ul> } />
 	  </div>
 	)
 }

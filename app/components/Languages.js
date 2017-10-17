@@ -6,6 +6,7 @@ import SubSection from './SubSection'
 import ObjectiveC from './items/Objective-C'
 import CSS from './items/CSS'
 import PHP from './items/PHP'
+import JavaScript from './items/JavaScript'
 
 import English from './items/English'
 import French from './items/French'
@@ -22,6 +23,7 @@ class Languages extends Component {
             <CSS/>
             <ObjectiveC/>
             <PHP/>
+            <JavaScript/>
           </SubSection>
           <SubSection header="Spoken">
             <English/>

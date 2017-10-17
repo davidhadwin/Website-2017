@@ -48,7 +48,7 @@ body {
 h1,h2,h3,h4,h5,h6,hgroup,
 ul,ol,dd,
 p,figure,
-pre,table,fieldset,hr,
+pre,table,fieldset,hr, ul
 .button-container{
     padding-bottom: 0;
     margin-top: 0;
@@ -57,11 +57,25 @@ pre,table,fieldset,hr,
 
 p {
     font-family: sans-serif;
-    font-weight: 10;
     color: #EEE;
 
     &:first-child {
         margin-top: 1.5rem;
+    }
+}
+.hex-info .description {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+        font-family: sans-serif;
+        color: #EEE;
+        text-align: left;
+        li {
+            &:first-child {
+                margin-top: 1.5rem;
+            }
+        }
     }
 }
 

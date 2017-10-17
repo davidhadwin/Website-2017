@@ -25,16 +25,22 @@ function defaultView(props) {
 function expandedView(url) {
 	return (
 		<div className="hex-info-container">
-			<ItemInfoContainer name={ name } rating={ rating } description={ <span>
-		      <p>I learned PHP out of necessity. While creating SnapMenu, I was in need of a language that could act as the liaison between my Objective-C front end and my MySQL back end, PHP was perfect for the job. Using it, I created a series of RESTful endpoints to manage the database.</p>
+			<ItemInfoContainer name={ name } rating={ rating } description={
+				<ul>
+					<li>Started working with PHP at Lynchburg College (2010)</li>
+					<li>Created a series of RESTful endpoints for the database management of my first iOS app SnapMenu</li>
+					<li>Interned remotely with Fuscata LLC</li>
+						<li>Developed a multi-database monitoring system with self healing alerts</li>
+					<li>Interned at CvilleIT as a Full-Stack Developer and was mentored to become their Lead Front-End Designer (2013)</li>
+						<li>Worked with a team to develop a restaurant management system called SchedulePOP using Symfony</li>
+						<li>Managed and updated legacy websites for Kenny Chesney, Tim McGraw, Toby Keith, Jeff Gordon, Trans-Siberian Orchestra and Elvis Presley</li>
+						<li>Developed websites for Phish, Lockn' Festival, Megaticket, Cyndi Lauper, Kings of Leon, Vampire Weekend and Bun. E. Carlos using ModX</li>
+						<li>Subcontracted out to StoryWare to help build a site for <a href="www.acac.com">ACAC</a> built on Wordpress</li>
+					<li>Worked remotely as a freelancer and developed websites for Nola Funk, CEG Presents and The Van Buren PHX built on Wordpress</li>
 
-				<p>In 2012, while stumbling through learning PHP, I landed a paid internship for a company based in Scottsville, VA called Fuscata LLC dealing solely with this jack-of-all-trades language. During this internship I developed my PHP skills and created a database management and alert system. The system would monitor multiple databases and post alerts to a database when certain functions weren’t working properly and resolve them when things were back up and running. This system took me 3 months to build and continued to be used to this day.</p>
 
-				<p>After finishing SnapMenu and my internship, I was hired by CvilleIT where I helped build SchedulePOP using Symfony (a PHP framework), Foundation 4 (a Front-End framework), jQuery and MySQL. From there we learned ModX (a PHP CMS) as a company and created website templates, widgets, chunks and scripts that could be reused and would allow us to rapidly increase our site development. I was put in charge of websites for many artists including Phish, Megaticket, Lockn Festival and Bun E. Carlos. Later, I was contracted out to StoryWare (Richmond, VA) to help build a website for ACAC built on Wordpress (a PHP CMS).</p>
-
-				<p>I parted ways with CvilleIT but remained in contact as a contractor. After a job with an iOS development team sustaining a makerspace called Tinkersmiths Makerspace (Charlottesville, VA), a flight to Austin, Texas to interview with IBM, a contracting gig with a small start up called Moonlighting (Charlottesville, VA) and a contract-to-hire position with an after market auto parts distributor called Fisher Auto Parts (Staunton, VA), I set out to follow my life long dream to travel the world.</p>
-
-				<p>While traveling, after several months I became bored of seeing new places and restless to put my skills and my passion to work; I was feeling an urge to help. Coincidentally, seven months into my travels, I was approach by some old contacts who had projects that were in need of immediate help. One project was to take an existing Wordpress template, style it according to a pre-approved design and make it theme-able so that it could be reused with different related venues (NolaFunk and CEGPresents). Another was to build a site for The Van Buren PHX which wanted a custom site, also built off of Wordpress, according to their design. All of these sites needed to be fully responsive, easily maintainable and editable for non-tech savvy individuals. After more months of traveling, freelancing and volunteering my time at "Workaways", and finding what I had been searching for, I decided that it was time for me to return to the real world and find something I was passionate enough about to sink my teeth into. This led me to create/update this website...</p></span> } />
+					<li>Worked with Symfony, Wordpress and ModX</li>
+				</ul>} />
 		  <RelatedWorkContainer>
 	    	<Acac url={url}/>
   			<NolaFunk url={url}/>
