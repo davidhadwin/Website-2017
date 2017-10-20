@@ -56,26 +56,58 @@ pre,table,fieldset,hr, ul
 }
 
 p {
-    font-family: sans-serif;
     color: #EEE;
 
     &:first-child {
         margin-top: 1.5rem;
     }
 }
+
 .hex-info .description {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
+    text-align: left;
+
+    .job {
+        font-size: 1.125rem;
+        color: #FFF;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    .title {
+        color: #AAA;
+        font-size: 1rem;
+
+        &:before {
+            content: " - ";
+        }
+    }
+
     ul {
-        font-family: sans-serif;
         color: #EEE;
         text-align: left;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+
         li {
-            &:first-child {
-                margin-top: 1.5rem;
-            }
+            line-height: 1.5rem;
+            margin-bottom: 1rem;
         }
+    }
+
+    a, a:visited {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover, a:active, a:focus {
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
     }
 }
 

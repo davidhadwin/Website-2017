@@ -3,6 +3,7 @@ import { Switch, Route, NavLink } from 'react-router-dom';
 import ItemInfoContainer from "./ItemInfoContainer"
 import RelatedWorkContainer from "./../works/RelatedWorkContainer"
 import Hex from "./Hex"
+import JobSection from "./JobSection"
 
 
 // Import Related Works
@@ -26,26 +27,32 @@ function defaultView(props) {
 function expandedView(url) {
 	return (
 		<div className="hex-info-container">
-			<ItemInfoContainer name={ name } rating={ rating } description={ 
-					<ul>
+			<ItemInfoContainer name={ name } rating={ rating } description={ <span>
+					<JobSection company="Lynchburg College" title="Student">
 						<li>Started using CSS at Lynchburg College (2010)</li>
-						<li>Interned at CvilleIT as a Full-Stack Developer and was mentored to become their Lead Front-End Designer and as well as a Developer (2013)</li>
-							<li>Managed and updated legacy websites for Kenny Chesney, Tim McGraw, Toby Keith, Jeff Gordon, Trans-Siberian Orchestra, ACDC and Elvis Presley</li>
-							<li>Developed websites for Phish, Lockn' Festival, Megaticket, Megacountry, Cyndi Lauper, Kings of Leon, Vampire Weekend, Bun. E. Carlos and Oakridge</li>
-							<li>Saved a client by building a webpage in 5 minutes before traffic came pouring in</li>
-							<li>Subcontracted out to StoryWare to help build a site for <a href="www.acac.com">ACAC</a></li>
-						<li>Flown out to Austin, Texas for a final round interview with IBM Design</li>
-						<li>Contracted by Moonlighting LLC as a Front-End Designer and Developer</li>
-							<li>Manifested multiple landing pages for lead generation</li>
-							<li>Led a "Hot House" CSS bootcamp for Moonlighting's Richmond office</li>
-						<li>Worked at Fisher Auto Parts as their Lead Designer but also put my skills in Front-End Development to work</li>
-							<li>I created a custom living style guide for coordination and company wide coherence that was fully-responsive, mobile first, accessible, slim and themeable (using the power of CSS preprocessers)</li>
-							<li>Led training workshops to enlighten co-workers to modern CSS coding standards</li>
-							<li>Was allowed significant research time to find the most modern and future proof CSS solutions to the companies development problems and ideas</li>
+					</JobSection>
+					<JobSection company="CvilleIT LLC" title="Lead Front-End Designer">
+						<li>Started as a Software Development Intern and was mentored to become their Lead Front-End Designer</li>
+						<li>Managed and updated legacy websites for <a href="https://kennychesney.com/?redirect=false" target="_new">Kenny Chesney</a>, <a href="http://www.mcgrawfan.com" target="_new">McGrawFan</a>, <a href="http://www.tobykeith.com" target="_new">Toby Keith</a>, <a href="https://jeffgordon.com" target="_new">Jeff Gordon</a>, <a href="http://www.trans-siberian.com/index/home" target="_new">Trans-Siberian Orchestra</a>, <a href="http://www.acdc.com" target="_new">ACDC</a> and <a href="https://www.graceland.com" target="_new">Graceland</a></li>
+						<li>Developed websites for <a href="http://tickets.phish.com" target="_new">Phish</a>, <a href="http://www.locknfestival.com" target="_new">Lockn' Festival</a>, <a href="http://www.megaticket.com" target="_new">Megaticket</a>, <a href="http://store.cyndilauper.com" target="_new">Cyndi Lauper</a>, <a href="http://kingsofleon.rockandrolltshirts.com" target="_new">Kings of Leon</a>, <a href="http://vampireweekend.kungfustore.com" target="_new">Vampire Weekend</a>, Bun. E. Carlos and Oakridge</li>
+						<li>Saved a client by building a webpage in 5 minutes before traffic came pouring in</li>
+						<li>Subcontracted out to StoryWare to help build a site for <a href="http://www.acac.com" target="_new">ACAC</a></li>
+					</JobSection>
+					<JobSection company="Moonlighting LLC" title="Front-End Designer and Developer">
+						<li>Manifested multiple landing pages for lead generation</li>
+						<li>Led a "Hot House" CSS bootcamp for Moonlighting's Richmond office</li>
+					</JobSection>
+					<JobSection company="Fisher Auto Parts" title="Lead Designer">
+						<li>I created a custom living style guide for coordination and company wide coherence that was fully-responsive, mobile first, accessible, slim and themeable (using the power of CSS preprocessers)</li>
+						<li>Led training workshops to enlighten co-workers to modern CSS coding standards</li>
+						<li>Was allowed significant research time to find the most modern and future proof CSS solutions to the companies development problems and ideas</li>
+					</JobSection>
+					<JobSection company="Other Experiences">
 						<li>Designed and developed this website using CSS preprocessers</li>
-
+						<li>Flown out to Austin, Texas for a final round interview with IBM Design</li>
 						<li>Extensively utilized Bootstrap and Foundation frameworks</li>
-					</ul> } />
+					</JobSection>
+					</span> } />
 		  <RelatedWorkContainer>
 	    	<Acac url={url}/>
   			<NolaFunk url={url}/>

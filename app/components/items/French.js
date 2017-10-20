@@ -3,6 +3,7 @@ import { Switch, Route, NavLink } from 'react-router-dom';
 import ItemInfoContainer from "./ItemInfoContainer"
 import RelatedWorkContainer from "./../works/RelatedWorkContainer"
 import Hex from "./Hex"
+import JobSection from "./JobSection"
 
 import thumbNail from "./../images/hexes/languages/fr.svg";
 
@@ -19,8 +20,8 @@ function defaultView(props) {
 function expandedView(url) {
 	return (
 		<div className="hex-info-container">
-			<ItemInfoContainer name={ name } rating={ rating } description={ 
-			<ul>
+			<ItemInfoContainer name={ name } rating={ rating } description={ <span>
+				<JobSection company="Other Experiences">
 					<li>Raised speaking French till the age of 7</li>
 					<li>Forgot French while learning English because of never having learned to read and write</li>
 					<li>Took French classes from high school through college</li>
@@ -28,7 +29,8 @@ function expandedView(url) {
 					<li>Hitch-hiked around France for 2 months</li>
 					<li>Mastered the French course in Duolingo</li>
 					<li>Achieved working proficiency</li>
-				</ul> } />
+				</JobSection>
+				</span> } />
 	  </div>
 	)
 }
