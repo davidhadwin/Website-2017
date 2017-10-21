@@ -1,17 +1,39 @@
-import React, { Component } from 'react';
-import RelatedWork from './RelatedWork';
+import React, { Component } from 'react'
+import RelatedWork from './RelatedWork'
+import HorizontalScroll from './../HorizontalScroll'
+
+import HTML from "./../items/HTML"
+import CSS from "./../items/CSS"
+import PHP from "./../items/PHP"
+import WordPress from "./../items/Wordpress"
 
 import thumbNail from "./../images/previous-work/nolafunk.jpg";
 
 const name = 'Nola Funk';
+const role = "Contract Front-End Developer";
+const duration = "20hrs";
+const site = "www.nolafunk.com"
 const path = 'nolafunk';
 const size = 'medium';
 
 class NolaFunk extends React.Component {
 	render () {
     return (
-      <RelatedWork name={name} path={path} thumbNail={thumbNail} size={size} url={this.props.url}>
-        <p>I was subcontracted by CvilleIT (Charlottesville, VA) to create this and a twin CEG Presents. The goal was to use an existing theme built by GrokWorks (Waynesboro, VA) and make it theme-able using CSS by extracting colors to the top of the file (requested by client) so that development time could be saved for all subsequent sites. The site was built off of Wordpress (PHP) and took  ~20hrs to style to be responsive and theme-able.</p>
+      <RelatedWork 
+      	name={name}
+      	role={role}
+      	duration={duration}
+      	site={site}
+      	path={path} 
+      	thumbNail={thumbNail} 
+      	size={size} 
+      	url={this.props.url}>
+        <HorizontalScroll header="Tools & Languages Used">
+      			<CSS />
+      			<HTML />
+      			<PHP />
+      			<WordPress />
+      		</HorizontalScroll>
       </RelatedWork>
     )
   }

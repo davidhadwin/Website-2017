@@ -12,9 +12,9 @@ import NolaFunk from "./../works/NolaFunk";
 import TheVanBurenPHX from "./../works/TheVanBurenPHX";
 import Phish from "./../works/Phish";
 
-import thumbNail from "./../images/hexes/languages/css3.svg";
+import thumbNail from "./../images/hexes/languages/css.svg";
 
-const name = "CSS 3";
+const name = "CSS";
 const rating = "5";
 const route = "/languages/css";
 

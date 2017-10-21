@@ -4,11 +4,10 @@ import Star from "./../Star"
 
 import SVGInline from "react-svg-inline";
 
-
 class Hex extends Component {
 	render () {
 		return (
-			<NavLink className="hex" activeClassName="active" to={ this.props.route }>
+			<NavLink className={ this.props.show ? "hex" : "hex inactive" } activeClassName="active" to={ this.props.route }>
 	  		<SVGInline svg={ this.props.svg } />
 	  		<span className="hex-description">
 	  			<div className="hex-name"> { this.props.name } </div>
@@ -17,6 +16,10 @@ class Hex extends Component {
 	  	</NavLink>
 		)
 	}
+}
+
+Hex.defaultProps = {
+	show: true
 }
 
 export default Hex;

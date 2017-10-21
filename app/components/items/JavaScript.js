@@ -48,11 +48,9 @@ function expandedView(url) {
 					</JobSection>
 				</span> } />
 		  <RelatedWorkContainer>
-	    	<Acac url={url}/>
   			<NolaFunk url={url}/>
   			<Phish url={url}/>
   			<TheVanBurenPHX url={url}/>
-  			<SnapMenu url={url}/>
 		  </RelatedWorkContainer>
 	  </div>
 	)

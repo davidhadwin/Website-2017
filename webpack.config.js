@@ -51,7 +51,7 @@ module.exports = {
         }]
     },
     output: {
-        filename: "transformed.js",
+        filename: "transformed.js?v1.4",
         path: __dirname + '/build'
     },
     plugins: [

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ItemInfoSubRouter from './ItemInfoSubRouter'
-import Slider from './Slider'
+import Navigation from './Navigation'
 import SubSection from './SubSection'
 
 import ObjectiveC from './items/Objective-C'
@@ -18,7 +18,7 @@ class Languages extends Component {
     return (
       <section id="languages" className={this.props.match.params.item ? selectedClass : ""}>
         <h1 className="landmark">Languages</h1>
-        <Slider>
+        <Navigation>
           <SubSection header="Computer">
             <CSS/>
             <ObjectiveC/>
@@ -29,7 +29,7 @@ class Languages extends Component {
             <English/>
             <French/>
           </SubSection>
-        </Slider>
+        </Navigation>
         <ItemInfoSubRouter />
       </section>
     );

@@ -1,0 +1,501 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font: 1em/1.5em "Comic Sans MS", cursive; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #1F5578; }
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dd,
+p, figure,
+pre, table, fieldset, hr, ul
+.button-container {
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 1.5rem; }
+
+p {
+  color: #EEE; }
+  p:first-child {
+    margin-top: 1.5rem; }
+
+.hex-info .description {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  text-align: left; }
+  .hex-info .description .job {
+    font-size: 1.125rem;
+    color: #FFF;
+    margin-bottom: 1rem;
+    display: inline-block; }
+  .hex-info .description .title {
+    color: #AAA;
+    font-size: 1rem; }
+    .hex-info .description .title:before {
+      content: " - "; }
+  .hex-info .description ul {
+    color: #EEE;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1.5rem; }
+    .hex-info .description ul li {
+      line-height: 1.5rem;
+      margin-bottom: 1rem; }
+  .hex-info .description a, .hex-info .description a:visited {
+    color: white;
+    font-weight: bold;
+    text-decoration: none; }
+  .hex-info .description a:hover, .hex-info .description a:active, .hex-info .description a:focus {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline; }
+
+/* RESETS */
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* END RESETS */
+h1, h2, h3 {
+  font-weight: 200;
+  color: #FFF;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 1.5rem; }
+
+h1:first-letter {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.1rem;
+  text-align: center; }
+
+h2:first-letter {
+  font-size: 1.5rem; }
+
+img {
+  width: 100%; }
+
+button {
+  border: 2px white solid;
+  color: white;
+  background-color: #7DA6C0;
+  padding: .5rem 1rem;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+hr {
+  width: 50%;
+  margin: 3rem auto; }
+
+section {
+  padding: 1.5rem;
+  padding-bottom: 0;
+  text-align: center;
+  overflow: hidden;
+  position: relative; }
+  section .hex-info-container {
+    display: none;
+    position: relative; }
+  section.isSelected {
+    padding: 0;
+    text-align: left; }
+    section.isSelected > h1 {
+      display: none; }
+    section.isSelected .slider-container {
+      min-width: 100%;
+      height: 5rem;
+      background-color: #11405F;
+      overflow-x: scroll; }
+      section.isSelected .slider-container .hex-section {
+        min-width: 100vw;
+        padding-top: 5px;
+        white-space: nowrap; }
+        section.isSelected .slider-container .hex-section .sub-section {
+          display: inline-block; }
+        section.isSelected .slider-container .hex-section h2 {
+          display: none; }
+        section.isSelected .slider-container .hex-section .hex-container {
+          width: auto;
+          margin: 0;
+          max-width: none;
+          display: inline-block; }
+          section.isSelected .slider-container .hex-section .hex-container .hex {
+            width: 4.3rem;
+            margin: 0;
+            position: relative; }
+            section.isSelected .slider-container .hex-section .hex-container .hex:not(.active) {
+              opacity: .5; }
+            section.isSelected .slider-container .hex-section .hex-container .hex.active .SVGInline-svg {
+              filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.2)); }
+    section.isSelected .hex-info-container {
+      display: block;
+      text-align: center;
+      padding: 2rem 1.5rem 0px; }
+
+section#header {
+  padding: 2rem;
+  background-color: #fff; }
+
+section#intro {
+  background-color: #7DA6C0;
+  text-align: center; }
+
+section#languages {
+  background-color: #32688B; }
+
+section#skills {
+  background-color: #1F5578; }
+
+section#interests {
+  background-color: #4F7F9E; }
+
+section#countries {
+  background-color: #1F5578; }
+
+.rating > span {
+  display: inline-block; }
+  .rating > span > svg {
+    max-height: 1.5rem;
+    max-width: 1.5rem; }
+
+.SVGInline-svg {
+  width: 100%;
+  height: 100%; }
+
+#logo {
+  width: 90%; }
+  @media (min-width: 480px) and (max-width: 650px) {
+    #logo {
+      width: 90%; } }
+  @media (min-width: 650px) {
+    #logo {
+      width: 70%; } }
+  @media (min-width: 900px) {
+    #logo {
+      width: 50%; } }
+
+/* HEXES START HERE */
+.hex-container {
+  display: inline-block;
+  font-size: 0;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  vertical-align: top; }
+
+a.hex {
+  display: inline-block;
+  width: 25%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top; }
+  a.hex > span.SVGInline .SVGInline-svg {
+    transition: all 0.3s ease;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2)); }
+  a.hex .hex-name {
+    color: white; }
+
+.hex-related-works {
+  text-align: left; }
+
+.related-work {
+  vertical-align: top; }
+  .related-work.small, .related-work.medium, .related-work.large {
+    display: inline-block;
+    padding-bottom: 0; }
+  .related-work.medium {
+    width: 100%; }
+  .related-work.small {
+    width: 50%; }
+  .related-work.small:nth-of-type(2n-1) .related-work-detail {
+    margin-right: calc(-100% - 1.5rem); }
+  .related-work.small:nth-of-type(2n) .related-work-detail {
+    margin-left: calc(-100% - 1.5rem); }
+  .related-work > a {
+    padding: 1rem; }
+    .related-work > a > img {
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 4px 0px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2); }
+  .related-work .related-work-toggle {
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-size: 0;
+    position: relative;
+    z-index: 1;
+    width: 100%; }
+    .related-work .related-work-toggle > img {
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 4px 0px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2); }
+    .related-work .related-work-toggle.active > img {
+      box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 3px rgba(0, 0, 0, 0.12), 0px 4px 15px 0px rgba(0, 0, 0, 0.2); }
+    .related-work .related-work-toggle.active:after {
+      content: " ";
+      display: block;
+      width: 2rem;
+      border-bottom: 1.5rem solid #1F5578;
+      border-left: 2rem solid transparent;
+      border-right: 2rem solid transparent;
+      bottom: 0;
+      left: calc(50% - 2rem);
+      position: absolute;
+      z-index: -1; }
+  .related-work .related-work-detail {
+    background-color: #1F5578;
+    padding: 1.5rem;
+    padding-bottom: 0;
+    position: relative;
+    transition: all 3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: auto;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    overflow: hidden; }
+
+.close-button-container {
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem; }
+  .close-button-container svg {
+    opacity: .2;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.landmark {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem; }
+
+/* Mixin that centers hexes if there are less than the necessary number in a line */
+/* Media queries to keep the hexes orderly */
+@media only screen and (max-width: 480px) {
+  a.hex {
+    width: calc(100% / 4);
+    padding: 0 5px; }
+  a.hex:nth-child(7n - 2) {
+    margin-left: calc(50% / 4); }
+  a.hex:nth-child(7n) {
+    margin-right: calc(50% / 4); }
+  a.hex:nth-last-child(1):first-child {
+    margin-left: calc(3 * calc(50% / 4)); }
+  a.hex:nth-last-child(2):first-child {
+    margin-left: calc(2 * calc(50% / 4)); }
+  a.hex:nth-last-child(3):first-child {
+    margin-left: calc(1 * calc(50% / 4)); }
+  section#header {
+    padding: 1rem; }
+  .landmark {
+    margin-bottom: 2rem; }
+  a.hex .hex-description {
+    display: none; } }
+
+@media only screen and (min-width: 480px) and (max-width: 650px) {
+  /* Allows the borders to grow at some points */
+  .hex-container {
+    max-width: 500px; }
+    .hex-container a.hex .hex-description {
+      display: none; }
+  a.hex {
+    width: calc(100% / 5);
+    padding: 0 5px; }
+  a.hex:nth-child(9n - 3) {
+    margin-left: calc(50% / 5); }
+  a.hex:nth-child(9n) {
+    margin-right: calc(50% / 5); }
+  a.hex:nth-last-child(1):first-child {
+    margin-left: calc(4 * calc(50% / 5)); }
+  a.hex:nth-last-child(2):first-child {
+    margin-left: calc(3 * calc(50% / 5)); }
+  a.hex:nth-last-child(3):first-child {
+    margin-left: calc(2 * calc(50% / 5)); }
+  a.hex:nth-last-child(4):first-child {
+    margin-left: calc(1 * calc(50% / 5)); } }
+
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+  /* Allows the borders to grow at some points */
+  .hex-container {
+    max-width: 1200px; }
+    .hex-container a.hex .hex-description {
+      display: none; }
+  a.hex {
+    width: calc(100% / 8);
+    padding: 0 5px; }
+  a.hex:nth-child(15n - 6) {
+    margin-left: calc(50% / 8); }
+  a.hex:nth-child(15n) {
+    margin-right: calc(50% / 8); }
+  a.hex:nth-last-child(1):first-child {
+    margin-left: calc(7 * calc(50% / 8)); }
+  a.hex:nth-last-child(2):first-child {
+    margin-left: calc(6 * calc(50% / 8)); }
+  a.hex:nth-last-child(3):first-child {
+    margin-left: calc(5 * calc(50% / 8)); }
+  a.hex:nth-last-child(4):first-child {
+    margin-left: calc(4 * calc(50% / 8)); }
+  a.hex:nth-last-child(5):first-child {
+    margin-left: calc(3 * calc(50% / 8)); }
+  a.hex:nth-last-child(6):first-child {
+    margin-left: calc(2 * calc(50% / 8)); }
+  a.hex:nth-last-child(7):first-child {
+    margin-left: calc(1 * calc(50% / 8)); } }
+
+@media only screen and (min-width: 900px) {
+  section#intro {
+    display: flex; }
+    section#intro h1 {
+      width: 50%;
+      text-align: right;
+      line-height: 2.1rem; }
+    section#intro .button-container {
+      width: 50%;
+      text-align: left; }
+      section#intro .button-container button {
+        margin: 0 0 0 5rem; }
+  a.hex .rating > span {
+    display: inline-block; }
+    a.hex .rating > span > svg {
+      max-height: 1rem;
+      max-width: 1rem; }
+  section.isSelected {
+    display: flex; }
+    section.isSelected .slider-container {
+      min-width: auto;
+      width: 30%;
+      max-width: 300px;
+      height: 100vh;
+      background-color: #11405F;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      display: inline-block; }
+      section.isSelected .slider-container .hex-section {
+        min-width: 100%;
+        padding: 1.5rem 0 0 .75rem; }
+        section.isSelected .slider-container .hex-section .sub-section {
+          width: 100%;
+          display: block; }
+        section.isSelected .slider-container .hex-section h2 {
+          display: none; }
+        section.isSelected .slider-container .hex-section .hex-container {
+          width: 100%;
+          max-width: none; }
+          section.isSelected .slider-container .hex-section .hex-container .hex {
+            height: auto;
+            width: 100%;
+            position: relative;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            margin-bottom: .75rem; }
+            section.isSelected .slider-container .hex-section .hex-container .hex > span.SVGInline {
+              display: inline-block;
+              width: 30%; }
+            section.isSelected .slider-container .hex-section .hex-container .hex .hex-description {
+              display: inline-block;
+              max-width: 70%;
+              font-size: 1em;
+              padding: 1rem;
+              vertical-align: top; }
+              section.isSelected .slider-container .hex-section .hex-container .hex .hex-description .hex-name {
+                font-size: 1.5em; }
+            section.isSelected .slider-container .hex-section .hex-container .hex:not(.active) {
+              opacity: .5; }
+    section.isSelected .hex-info-container {
+      width: 70%;
+      display: inline-block;
+      font-size: 1em;
+      max-height: 100vh;
+      overflow-x: scroll;
+      flex-grow: 2; }
+  .hex-container {
+    max-width: 1200px; }
+  .related-work.large {
+    width: 100%; }
+  .related-work.medium {
+    width: 50%; }
+  .related-work.small {
+    width: 50%; }
+  .related-work:nth-child(2n-1) .related-work-detail {
+    margin-right: calc(-100% - 1.5rem); }
+  .related-work:nth-child(2n) .related-work-detail {
+    margin-left: calc(-100% - 1.5rem); }
+  a.hex {
+    width: calc(100% / 8);
+    padding: 0 5px; }
+  a.hex:nth-child(15n - 6) {
+    margin-left: calc(50% / 8); }
+  a.hex:nth-child(15n) {
+    margin-right: calc(50% / 8); }
+  a.hex:nth-last-child(1):first-child {
+    margin-left: calc(7 * calc(50% / 8)); }
+  a.hex:nth-last-child(2):first-child {
+    margin-left: calc(6 * calc(50% / 8)); }
+  a.hex:nth-last-child(3):first-child {
+    margin-left: calc(5 * calc(50% / 8)); }
+  a.hex:nth-last-child(4):first-child {
+    margin-left: calc(4 * calc(50% / 8)); }
+  a.hex:nth-last-child(5):first-child {
+    margin-left: calc(3 * calc(50% / 8)); }
+  a.hex:nth-last-child(6):first-child {
+    margin-left: calc(2 * calc(50% / 8)); }
+  a.hex:nth-last-child(7):first-child {
+    margin-left: calc(1 * calc(50% / 8)); } }
+
+/* HEXES END HERE */
+/* Sense whether the user is using a mouse */
+@media (pointer: fine) {
+  /* Add hover effects */
+  a.hex:hover > .SVGInline > .SVGInline-svg {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.2)); }
+  .related-work-toggle > img:hover,
+  button:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 3px rgba(0, 0, 0, 0.12), 0px 4px 15px 0px rgba(0, 0, 0, 0.2); }
+  button:hover {
+    transition: all 0.3s ease;
+    background-color: white;
+    color: #7DA6C0; }
+  .close-button-container:hover svg {
+    opacity: .5; } }
+
+/* Helpers */
+.hidden {
+  display: none; }

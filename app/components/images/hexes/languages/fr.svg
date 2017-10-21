@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="218px" height="250px" viewBox="0 0 218 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>French</title>
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>fr</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <polygon id="path-1" points="109.066987 0 217.320163 62.5 217.320163 187.5 109.066987 250 0.813811825 187.5 0.813811825 62.5"></polygon>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="French">
-            <g id="Hexagon-Large">
-                <g>
+        <g id="fr">
+            <g id="French">
+                <g id="Hexagon-Large">
                     <mask id="mask-2" fill="white">
                         <use xlink:href="#path-1"></use>
                     </mask>

@@ -42,13 +42,14 @@ html {
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
     background-color: #1F5578;
 }
 
 h1,h2,h3,h4,h5,h6,hgroup,
 ul,ol,dd,
 p,figure,
-pre,table,fieldset,hr, ul
+pre,table,fieldset,hr, ul,
 .button-container{
     padding-bottom: 0;
     margin-top: 0;
@@ -63,52 +64,36 @@ p {
     }
 }
 
+ul {
+    color: #EEE;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+
+    li {
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+a, a:visited {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .hex-info .description {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
     text-align: left;
-
-    .job {
-        font-size: 1.125rem;
-        color: #FFF;
-        margin-bottom: 1rem;
-        display: inline-block;
-    }
-
-    .title {
-        color: #AAA;
-        font-size: 1rem;
-
-        &:before {
-            content: " - ";
-        }
-    }
-
-    ul {
-        color: #EEE;
-        text-align: left;
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-
-        li {
-            line-height: 1.5rem;
-            margin-bottom: 1rem;
-        }
-    }
-
-    a, a:visited {
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-    a:hover, a:active, a:focus {
-        color: white;
-        font-weight: bold;
-        text-decoration: underline;
-    }
 }
 
 /* RESETS */
@@ -204,9 +189,9 @@ section {
         }
 
         
-        .slider-container {
+        nav {
             min-width: 100%;
-            height: 5rem;
+            // height: 5rem;
             background-color: #11405F;
             overflow-x: scroll;
 
@@ -276,6 +261,52 @@ section#countries {
     background-color: #1F5578;
 }
 
+header.job {
+    font-size: 1.125rem;
+    color: #FFF;
+    margin-bottom: 1rem;
+    display: inline-block;
+
+    .title {
+        color: #AAA;
+        font-size: 1rem;
+
+        &:before {
+            content: " - ";
+        }
+    }
+
+}
+
+// Styles specific to scrolling hex container 
+.scroll-container {
+    min-width: 100%;
+    overflow-x: scroll;
+    margin: 0 -1.5rem 1.5rem -1.5rem;
+    text-align: center;
+
+    .hex-section {
+        padding-top: 5px;
+        white-space: nowrap;
+
+        a.hex {
+            width: 6.3rem;
+            margin: .5rem;
+
+            .rating {
+                & > span {
+                    display: inline-block;
+
+                    & > svg {
+                        max-width: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Styles specific to scrolling hex container 
+
 .rating {
     & > span {
         display: inline-block;
@@ -339,6 +370,7 @@ a.hex {
     }
      .hex-name {
         color: white;
+        font-weight: normal;
     }
 }
 
@@ -415,6 +447,7 @@ a.hex {
     }
 
     .related-work-detail {
+        text-align: center;
         background-color: #1F5578;
         padding: 1.5rem;
         padding-bottom: 0;
@@ -446,24 +479,26 @@ a.hex {
 }
 
 
-/* Mixin that centers hexes if there are less than the necessary number in a line */
+/* Mixin that centers hexes in nav if there are less than the necessary number in a line */
 @mixin centerHexes ($number) {
-    $nextRowStart: $number + 1;
-    $nextRowEnd: $number + $number - 1;
-    $nextRowDif: $nextRowEnd - $nextRowStart;
-    $nextRowStartFormula: #{$nextRowEnd}n - #{$nextRowDif};
-    $defaultMargin: calc(50% / #{$number});
-    a.hex:nth-child(#{$nextRowStartFormula}) {
-        margin-left: $defaultMargin;
-    }
-    a.hex:nth-child(#{$nextRowEnd}n) {
-        margin-right: $defaultMargin;
-    }
+    nav {
+        $nextRowStart: $number + 1;
+        $nextRowEnd: $number + $number - 1;
+        $nextRowDif: $nextRowEnd - $nextRowStart;
+        $nextRowStartFormula: #{$nextRowEnd}n - #{$nextRowDif};
+        $defaultMargin: calc(50% / #{$number});
+        a.hex:nth-child(#{$nextRowStartFormula}) {
+            margin-left: $defaultMargin;
+        }
+        a.hex:nth-child(#{$nextRowEnd}n) {
+            margin-right: $defaultMargin;
+        }
 
-    @for $i from 1 to $number {
-        $threshold: $number - $i;
-        a.hex:nth-last-child(#{$i}):first-child {
-            margin-left: calc(#{$threshold} * #{$defaultMargin});
+        @for $i from 1 to $number {
+            $threshold: $number - $i;
+            a.hex:nth-last-child(#{$i}):first-child {
+                margin-left: calc(#{$threshold} * #{$defaultMargin});
+            }
         }
     }
 }
@@ -560,7 +595,7 @@ a.hex {
     section.isSelected {
         display: flex;
 
-        .slider-container {
+        nav {
             min-width: auto;
             width: 30%;
             max-width: 300px;
@@ -701,4 +736,14 @@ a.hex {
 /* Helpers */
 .hidden {
     display: none;
+}
+
+.no-marg-bot {
+    margin-bottom: 0;
+}
+
+.inactive {
+    pointer-events: none;
+    cursor: default;
+    opacity: .5;
 }
